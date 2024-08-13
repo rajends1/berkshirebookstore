@@ -1,0 +1,37 @@
+html,body{
+    height:100%;
+}
+
+body {
+    font-family: 'Lato', 'serif';
+}
+
+main{
+    flex:1 0 auto;
+    background-color: aliceblue;
+}
+
+footer{
+    flex-shrink:0;
+}
+.book-link{
+    font-weight: 700;
+    text-decoration: none;
+    color: #21897e;
+}
+
+h1{
+    color:red;
+}
+
+#bookForm{
+    width:50%;
+    color:#21897e;
+    border: 3px #21897e solid; 
+    border-radius: 2%;
+}
+
+#about_page{
+  color:antiquewhite;
+  background-color: #3ba99c;
+}
