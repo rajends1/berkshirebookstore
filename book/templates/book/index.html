@@ -1,120 +1,45 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends 'base.html' %}
 
+{% load static %} 
+
+{% block title %}Homepage{% endblock %}
 
 {% block content %}
+<div class="container mt-4">
 
-<!-- index.html content starts here -->
-<div class="container-fluid content">
-    <div class="col-12 mt-3 left">
-        <!-- Show the search results -->
-        {% if results %}
-        <div class="row">
-            <h2>Results</h2>
-            {% for book in results %}
-            <!-- Iterate the searching results -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <div class="image-container">
-                            {% if "imageplaceholder" in book.image.url %}
-                            <img class="card-img-top" src="{% static 'images/heroimage.webp' %}" alt="placeholder image">
-                            {% else %}
-                            <img class="card-img-top" src=" {{ book.image.url }}" alt="{{ book.title }}">
-                            {% endif %}
-                            <div class="">
-                                <p class="author">Author: {{ book.author }}</p>
-                            </div>
-                        </div>
-                        <a href="{% url 'book_detail' book.id %}" class="book-link">
-                            <h2 class="card-title">{{ book.title }}</h2>
-                        </a>
-                        <hr />
-                        <p class="card-text text-muted h6">{{ book.category}}</p>
-                        <hr />
-                        <p class="card-text text-muted h6">Added : {{ book.created_on}}</p>
-                        {% if user.is_authenticated and book.user == user%}
-                        <a href="{% url 'edit_book' book.id %}" class="btn btn-dark">Update book</a>
-                        <a href="{% url 'delete_book' book.id %}" class="btn btn-danger">Delete book</a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-            {% if forloop.counter|divisibleby:3 %}
-        </div>
-        <div class="row">
-            {% endif %}
-            {% endfor %}
-        </div>
-        {% elif query %}
-        <p>No results found for "{{ query }}".</p>
-        {% endif %}
+    <!-- Hero/Banner Section -->
+    <div class="jumbotron" style="background-image: url('{% static 'images/banner.webp' %}');">
+        <h1 class="jumbotron-welcome">Welcome to Berkshire BookStore!</h1>
+        <p class="jumbotron-message">Discover and share amazing books from around the world.</p>
+        <a class="jumbotron-btn btn btn-lg" href="{% url 'account_signup' %}" role="button">Sign Up</a>
     </div>
 
+    <!-- Main Content with Cards -->
     <div class="row">
-        <!-- Book Entries Column -->
-        <div class="col-12 mt-3 left">
-            <div class="row">
-                <!-- Display the list of books -->
-                {% for book in book_list %}
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <div class="image-container">
-                                {% if "imageplaceholder" in book.image.url %}
-                                <img class="card-img-top" src="{% static 'images/heroimage.webp' %}"
-                                    alt="placeholder image">
-                                {% else %}
-                                <img class="card-img-top" src=" {{ book.image.url }}" alt="{{ book.title }}">
-                                {% endif %}
-                                <div class="">
-                                    <p class="author">Author: {{ book.author }}</p>
-                                </div>
-                            </div>
-                            <a href="{% url 'book_detail' book.id %}" class="book-link">
-                                <h2 class="card-title">{{ book.title }}</h2>
-                            </a>
-                            <hr />
-                            <p class="card-text text-muted h6">{{ book.category}}</p>
-                            <hr />
-                            <p class="card-text text-muted h6">Added : {{ book.created_on}}</p>
-                            {% if user.is_authenticated and book.user == user%}
-                            <a href="{% url 'edit_book' book.id %}" class="btn btn-dark">Update book</a>
-                            <a href="{% url 'delete_book' book.id %}" class="btn btn-danger">Delete book</a>
-                            {% endif %}
-                        </div>
-                    </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title-green">Discover Amazing Books</h5>
+                    <p class="card-text">
+                    </h6> Welcome to Berkshire Bookstore,</h6> </br> where literary passion meets luxury. Our carefully curated collection spans across genres,from timeless classics to the latest bestsellers. Whether you’re a casual reader or a devoted bibliophile,</br> we provide a sanctuary where you can explore, discover, and indulge in the world of books.
+                    </p>
                 </div>
-                {% if forloop.counter|divisibleby:3 %}
             </div>
-            <div class="row">
-                {% endif %}
-                {% endfor %}
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title-green">Our Features</h5>
+                    <p class="card-text">
+                    <h6>Vast Collection: </h6> Explore thousands of books across all genres, including Fiction, Non-Fiction, Science Fiction, and Children's & Teenage.</br>
+                <h6>Personalized Recommendations: </h6> Get book suggestions tailored to your reading preferences.</br>
+            <h6>User Reviews:</h6> Read reviews from other readers and share your thoughts on your favorite books.</br>
+        <h6>Easy Management: </h6> Add, edit, or delete books and reviews with ease by signing up or logging in.</br>
+    <h6>Exclusive Events: </h6> Join us for book signings, author talks, and literary events throughout the year.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-
-    {% if is_paginated %}
-    <!-- Display page information -->
-    <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center">
-            {% if page_obj.has_previous %}
-            <li><a href="?page={{ page_obj.previous_page_number }}" class="book-link"> &laquo PREV </a></li>
-            <span>......</span>
-            {% else %}
-            
-            {% endif %}
-            {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}" class="book-link"> NEXT &raquo; </a></li>
-            {% else %}
-    
-            {% endif %}
-
-        </ul>
-    </nav>
-    {% endif %}
 </div>
-</div>
-
-<!-- index.html content ends here -->
 {% endblock %}
