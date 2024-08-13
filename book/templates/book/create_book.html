@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+<!-- create_book.html content starts here -->
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mt-3 offset-md-2">
+      <form id="bookForm" method="POST" style="width: 725px" enctype='multipart/form-data'>
+        {{ form |crispy}}
+        {% csrf_token %}
+        <div class="text-center">
+          <button id="postbutton" type="submit" class="btn btn-outline-primary">Create</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- create_book.html content ends here -->
+{% endblock %}

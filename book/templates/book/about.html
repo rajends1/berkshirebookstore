@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load static %} 
+
+{% block title %}Homepage{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+
+    <!-- Hero/Banner Section -->
+    <div class="jumbotron" style="background-image: url('{% static 'images/banner.webp' %}');">
+        <h1 class="jumbotron-welcome">Welcome to Berkshire BookStore!</h1>
+        <p class="jumbotron-message">Discover and share amazing books from around the world.</p>
+        <a class="jumbotron-btn btn btn-lg" href="{% url 'account_signup' %}" role="button">Sign Up</a>
+    </div>
+
+    <!-- Main Content with Cards -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title-green">Discover Amazing Books</h5>
+                    <p class="card-text">
+                    </h6> Welcome to Berkshire Bookstore,</h6> </br> where literary passion meets luxury. Our carefully curated collection spans across genres,from timeless classics to the latest bestsellers. Whether you’re a casual reader or a devoted bibliophile,</br> we provide a sanctuary where you can explore, discover, and indulge in the world of books.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title-green">Our Features</h5>
+                    <p class="card-text">
+                    <h6>Vast Collection: </h6> Explore thousands of books across all genres, including Fiction, Non-Fiction, Science Fiction, and Children's & Teenage.</br>
+                <h6>Personalized Recommendations: </h6> Get book suggestions tailored to your reading preferences.</br>
+            <h6>User Reviews:</h6> Read reviews from other readers and share your thoughts on your favorite books.</br>
+        <h6>Easy Management: </h6> Add, edit, or delete books and reviews with ease by signing up or logging in.</br>
+    <h6>Exclusive Events: </h6> Join us for book signings, author talks, and literary events throughout the year.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
