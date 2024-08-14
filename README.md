@@ -105,8 +105,9 @@ The Agile Manifesto followed as per below:  A good user story should be:
 - **Personalized Recommendations**: Get book suggestions tailored to your reading preferences.
 - **User Reviews**: Read reviews from other readers and share your thoughts on your favorite books.
 - **Easy Management**: Add, edit, or delete books and reviews with ease by signing up or logging in. </br>
-<img src="documentation/pictures/F1.JPG" alt="BerkshireBookstore Manage_book_userJPG" width="520">
-<img src="documentation/pictures/F2.JPG" alt="BerkshireBookstore ManageBook_userJPG" width="220"></br>
+<img src="documentation/pictures/F6.JPG" alt="BerkshireBookstore About_book_userJPG" width="520"></br>
+<img src="documentation/pictures/F1.JPG" alt="BerkshireBookstore Manage_book_userJPG" width="520"></br>
+<img src="documentation/pictures/F2.JPG" alt="BerkshireBookstore ManageBook_userJPG" width="220">
  <img src="documentation/pictures/F3.JPG" alt="BerkshireBookstore revieweJPG" width="220">
 <img src="documentation/pictures/F4.JPG" alt="BerkshireBookstore Manage_userJPG" width="220"></br>
  <img src="documentation/pictures/F5.JPG" alt="BerkshireBookstore revieweJPG" width="220">
@@ -135,6 +136,25 @@ The Agile Manifesto followed as per below:  A good user story should be:
 **Deployed to Heroku**
 Connected Secret Keys to config vars
 Connected Code Institute Sqlite Database
+Steps :
+1.	Install the Heroku CLI
+2.	Download and install the Heroku CLI.
+
+3.	If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
+
+4.	$ heroku login
+5.	Clone the repository
+6.	Use Git to clone berkshirebookstore's source code to your local machine.
+
+7.	$ heroku git:clone -a berkshirebookstore$ cd berkshirebookstore
+8.	Deploy your changes
+9.	Make some changes to the code you just cloned and deploy them to Heroku using Git.
+
+10.	$ git add .
+11.	$ git commit -am "make it better"
+12.	$ git push heroku master
+13.	$ heroku logs -t
+
 
 ## Usage
 Once the server is running, you can access the application in your web browser at `http://127.0.0.1:8000/`. Sign up or log in to start exploring books, receive personalized recommendations, and share your reviews.
