@@ -42,8 +42,12 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" 
+                        href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}" 
-                        href="{% url 'about' %}">Home</a>
+                        href="{% url 'about' %}">About</a>
                     </li>
 
                     <!-- Links for logged-in users, Welcome page is instead of Homepage -->
