@@ -6,7 +6,7 @@ Discover and share amazing books from around the world. The Berkshire Bookstore 
 <img src="documentation/pictures/responsive_design.webp" alt="BerkshireBookstore responsive" width="520">
 
 
-[View the live project here](https://berkshirebookstore-54bc6d6e349e.herokuapp.com/)
+[View the live project here](https://berkshirebookstore-54bc6d6e349e.herokuapp.com/about/)
 
 
 ## Table of Contents
@@ -89,11 +89,24 @@ Relationship : Category -> (n) Book , user- > (n) Book  & Book-> (n) review
 
 
 ## Agile Development
+
+The Agile Manifesto followed as per below:  A good user story should be:
+“I” ndependent (of all others)
+“N” egotiable (not a specific contract for features)
+“V” aluable (or vertical)
+“E” stimable (to a good approximation)
+“S” mall (so as to fit within an iteration)
+“T” estable (in principle, even if there isn’t a test for it yet)
+
 ## Features
 - **Vast Collection**: Explore thousands of books across all genres, including Fiction, Non-Fiction, Science Fiction, and Children's & Teenage.
 - **Personalized Recommendations**: Get book suggestions tailored to your reading preferences.
 - **User Reviews**: Read reviews from other readers and share your thoughts on your favorite books.
 - **Easy Management**: Add, edit, or delete books and reviews with ease by signing up or logging in.
+
+<img src="documentation/pictures/Check_list_compliance.JPG" alt="BerkshireBookstore Check_list_complianceJPG" width="520">
+
+
 
 ## Installation
 1. Clone the repository:
@@ -112,6 +125,10 @@ Relationship : Category -> (n) Book , user- > (n) Book  & Book-> (n) review
     ```bash
     python manage.py runserver
     ```
+
+**Deployed to Heroku**
+Connected Secret Keys to config vars
+Connected Code Institute Sqlite Database
 
 ## Usage
 Once the server is running, you can access the application in your web browser at `http://127.0.0.1:8000/`. Sign up or log in to start exploring books, receive personalized recommendations, and share your reviews.
