@@ -193,13 +193,14 @@ o	**Action**: Create detailed test cases and scenarios in a tool like TestRail o
 •	**Tool**: GitHub Issues
 o	**Achievement**: Efficiently track, prioritize, and manage bugs within the project.
 o	**Action**: Use GitHub Issues to document bugs. Label and categorize them based on severity, feature, and status. Ensure that bugs are linked to specific commits or pull requests to trace their resolution.
-**Implementation on GitHub Repository** </br>
+**Implementation on GitHub Repository** </br></br>
 •	**Action Steps:** </br>
-1.	Set up GitHub Actions for CI/CD, integrating automated linters and test runners for each language used in the project.
-2.	Regularly run W3C Validators for HTML and CSS, and integrate JavaScript and Python linters as part of the CI pipeline.
-3.	Writetten unit tests and expand coverage gradually, aiming for comprehensive test suites.
-4.	Use GitHub Issues to manage manual testing, bug tracking, and release management effectively.
-5.	Consider writing documentation that includes best practices for each area (HTML/CSS/JS/Python) and instructions for contributors on maintaining code quality.
+1.	•	Set up GitHub Actions for CI/CD, integrating automated linters and test runners for each language used in the project.
+•	Regularly run W3C Validators for HTML and CSS, and integrate JavaScript and Python linters as part of the CI pipeline.
+•	Writetten unit tests and expand coverage gradually, aiming for comprehensive test suites.
+•	Use GitHub Issues to manage manual testing, bug tracking, and release management effectively.
+•	Consider writing documentation that includes best practices for each area (HTML/CSS/JS/Python) and instructions for contributors on maintaining code quality.
+
 </br>
 By following these best practices and using the recommended tools, I have improved the quality, maintainability, and reliability of my  berkshirebookstore project on GitHub.
 
