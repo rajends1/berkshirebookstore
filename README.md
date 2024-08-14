@@ -104,8 +104,12 @@ The Agile Manifesto followed as per below:  A good user story should be:
 - **Vast Collection**: Explore thousands of books across all genres, including Fiction, Non-Fiction, Science Fiction, and Children's & Teenage.
 - **Personalized Recommendations**: Get book suggestions tailored to your reading preferences.
 - **User Reviews**: Read reviews from other readers and share your thoughts on your favorite books.
-- **Easy Management**: Add, edit, or delete books and reviews with ease by signing up or logging in.
-
+- **Easy Management**: Add, edit, or delete books and reviews with ease by signing up or logging in. </br>
+<img src="documentation/pictures/F1.JPG" alt="BerkshireBookstore Manage_book_userJPG" width="520">
+<img src="documentation/pictures/F2.JPG" alt="BerkshireBookstore ManageBook_userJPG" width="220"></br>
+ <img src="documentation/pictures/F3.JPG" alt="BerkshireBookstore revieweJPG" width="220">
+<img src="documentation/pictures/F4.JPG" alt="BerkshireBookstore Manage_userJPG" width="220"></br>
+ <img src="documentation/pictures/F5.JPG" alt="BerkshireBookstore revieweJPG" width="220">
 <img src="documentation/pictures/Check_list_compliance.JPG" alt="BerkshireBookstore Check_list_complianceJPG" width="520">
 
 
