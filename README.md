@@ -98,6 +98,8 @@ The Agile Manifesto followed as per below:  A good user story should be:
 “S” mall (so as to fit within an iteration)
 “T” estable (in principle, even if there isn’t a test for it yet)
 
+<img src="documentation/pictures/Agile_dash_borad.JPG" alt="BerkshireBookstore Agile_dash_boradJPG" width="520">
+
 ## Features
 - **Vast Collection**: Explore thousands of books across all genres, including Fiction, Non-Fiction, Science Fiction, and Children's & Teenage.
 - **Personalized Recommendations**: Get book suggestions tailored to your reading preferences.
