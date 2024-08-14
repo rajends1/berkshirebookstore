@@ -97,6 +97,21 @@ The Agile Manifesto followed as per below:  A good user story should be:
 “E” stimable (to a good approximation)
 “S” mall (so as to fit within an iteration)
 “T” estable (in principle, even if there isn’t a test for it yet)
+</br>
+User Stories : </br>
+**As a Site User**
+#1 As a site user, I can register for new login and verify it so that I can access the platform.</br>
+#2 As a site user, I can create, read, update, and delete my books to manage my books.</br>
+#3 As a site user, I can like and comment on others' books  to engage with the books.</br>
+#4 As a site user, I can search books  using a search bar to find relevant books easily.</br>
+#5 As a site user, I can create, read, update, and delete my books to manage my books.</br></br>
+**As a Site Admin**
+#6 As a site user, I can create different category genre like thriller , adventure ..so on  to manage my books.</br>
+#7 As a site admin, I can review and approve user-submitted books  so that I can approve or reject them based on books content.</br>
+#8 As a site user, I can register for new login and verify it so that I can access the platform.</br>
+#9 As a site user, I can create, read, update, and delete my books to manage my books.</br>
+#10 As a site user, I can like and comment on others' books  to engage with the books.</br>
+#11 As a site user, I can search books  using a search bar to find relevant books  easily.</br>
 
 <img src="documentation/pictures/Agile_dash_borad.JPG" alt="BerkshireBookstore Agile_dash_boradJPG" width="520">
 
