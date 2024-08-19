@@ -7,7 +7,7 @@ Discover and share amazing books from around the world. The Berkshire Bookstore 
 
 
 [View the live project here](https://berkshirebookstore-54bc6d6e349e.herokuapp.com/about/)
-Admin account details are username=suraj  password=Alertme12$
+</br> Admin account details are username=suraj  password=Alertme12$
 Admin used to create  category which should be used to create of a book  with category selection  by this application user
 
 ## Table of Contents
