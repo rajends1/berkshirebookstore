@@ -287,7 +287,8 @@ Once the server is running, you can access the application in your web browser a
 You can modify the configuration settings in the `settings.py` file according to your environment, such as database settings, static files handling, and more.
 
 ## Contributing
+Credit goes to code institute Hackaton project team guidance 
 Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request. You can also report issues or request features by opening an issue on GitHub.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details. 
