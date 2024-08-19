@@ -203,6 +203,7 @@ o	**Action**: Use GitHub Issues to document bugs. Label and categorize them base
 •	Consider writing documentation that includes best practices for each area (HTML/CSS/JS/Python) and instructions for contributors on maintaining code quality.
 
 </br>
+
 ![image](https://github.com/user-attachments/assets/48c26163-34d3-4485-940f-54e7520099b7)
 
 </br>
