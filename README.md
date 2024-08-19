@@ -42,6 +42,7 @@ I used Balsamiq to create the wireframes. They were served as initial thnking an
 
 
 ## Database Plan
+![image](https://github.com/user-attachments/assets/2fa2b473-f1ca-4fbc-b4c8-801888434399)
 
 **Django AllAuth User Model:**
 
